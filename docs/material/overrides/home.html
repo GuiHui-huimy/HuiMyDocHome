@@ -8,68 +8,154 @@
 <!-- Hero -->
 <section class="lab-hero">
   <div class="lab-hero__inner">
-    <h1>HUIMY Document Template</h1>
-    <p> HUI-MY Material Theme Mkdoc Template & Get Started Quickly</p>
+    <h1>HUI-MY Documentation Hub</h1>
+    <p>Get started HUI-MY by exploring the technical information and some documentation.</p>
     <div class="lab-hero__actions">
-      <a href="{{ 'getting-started/installation/' | url }}" class="md-button md-button--primary">Get started</a>
+      <a href="{{ 'getting-started/installation/' | url }}" class="md-button md-button--primary">Docs Lists</a>
       <a href="https://github.com/GuiHui-huimy/" class="md-button md-button--secondary">View on GitHub</a>
     </div>
   </div>
 </section>
 
-<!-- 特性卡片 -->
-<section class="lab-features">
-  <h2 class="lab-features__title">Why LabPress?</h2>
-  <div class="lab-features__grid">
-    <div class="lab-card">
-      <div class="lab-card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path
-            d="M20.56 18H3.44C2.65 18 2 17.37 2 16.59V7.41C2 6.63 2.65 6 3.44 6h17.12c.79 0 1.44.63 1.44 1.41v9.18c0 .78-.65 1.41-1.44 1.41M6.81 15.19v-3.66l1.92 2.35 1.92-2.35v3.66h1.93V8.81h-1.93l-1.92 2.35-1.92-2.35H4.89v6.38zM19.69 12h-1.92V8.81h-1.92V12h-1.93l2.89 3.28z" />
-        </svg></div>
-      <h2>Built‑in Academic Modules</h2>
-      <p>Publications, projects, news, and tools – ready to use out of the box.</p>
+<!-- 文档列表 -->
+<section class="lab-doclist">
+  <div class="lab-doclist__header">
+    <h2 class="lab-doclist__title">Documentation</h2>
+    <p class="lab-doclist__subtitle">Browse the essential guides and references.</p>
+  </div>
+
+  <!-- 分类一：Getting Started -->
+  <div class="lab-doclist__group">
+    <h3 class="lab-doclist__group-title">Getting Started</h3>
+    <div class="lab-doclist__list">
+      <!-- 条目 1 -->
+      <article class="lab-doclist__item">
+        <div class="lab-doclist__item-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+        </div>
+        <div class="lab-doclist__item-content">
+          <div class="lab-doclist__item-top">
+            <span class="lab-doclist__item-tag">Guide</span>
+            <span class="lab-doclist__item-time">5 min</span>
+          </div>
+          <h4 class="lab-doclist__item-title">
+            <a href="{{ 'getting-started/overview/' | url }}">Overview</a>
+          </h4>
+          <p class="lab-doclist__item-desc">Introduction to HUI-MY Docs Hub and its core concepts.</p>
+        </div>
+        <div class="lab-doclist__item-actions">
+          <a href="{{ 'getting-started/overview/' | url }}" class="lab-doclist__item-read">
+            Read
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="https://github.com/GuiHui-huimy/HuiMyDocHome/blob/main/docs/getting-started/overview.md"
+            class="lab-doclist__item-github" target="_blank" rel="noopener" title="View source">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- 条目 2 -->
+      <article class="lab-doclist__item">
+        <div class="lab-doclist__item-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+        </div>
+        <div class="lab-doclist__item-content">
+          <div class="lab-doclist__item-top">
+            <span class="lab-doclist__item-tag">Guide</span>
+            <span class="lab-doclist__item-time">8 min</span>
+          </div>
+          <h4 class="lab-doclist__item-title">
+            <a href="{{ 'getting-started/installation/' | url }}">Installation</a>
+          </h4>
+          <p class="lab-doclist__item-desc">Step-by-step guide to install HUI-MY Docs Hub on your environment.</p>
+        </div>
+        <div class="lab-doclist__item-actions">
+          <a href="{{ 'getting-started/installation/' | url }}" class="lab-doclist__item-read">
+            Read
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="https://github.com/GuiHui-huimy/HuiMyDocHome/blob/main/docs/getting-started/installation.md"
+            class="lab-doclist__item-github" target="_blank" rel="noopener" title="View source">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </a>
+        </div>
+      </article>
     </div>
-    <div class="lab-card">
-      <div class="lab-card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path
-            d="M3 6h18V4H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4v-2H3zm10 6H9v1.78c-.61.55-1 1.33-1 2.22s.39 1.67 1 2.22V20h4v-1.78c.61-.55 1-1.34 1-2.22s-.39-1.67-1-2.22zm-2 5.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5M22 8h-6c-.5 0-1 .5-1 1v10c0 .5.5 1 1 1h6c.5 0 1-.5 1-1V9c0-.5-.5-1-1-1m-1 10h-4v-8h4z" />
-        </svg></div>
-      <h2>Works on all devices</h2>
-      <p>Your lab site looks great on desktop, tablet, and mobile.</p>
-    </div>
-    <div class="lab-card">
-      <div class="lab-card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path
-            d="M17 8h3v12h1v1h-4v-1h1v-3h-4l-1.5 3H14v1h-4v-1h1zm1 1-3.5 7H18zM5 3h5c1.11 0 2 .89 2 2v11H9v-5H6v5H3V5c0-1.11.89-2 2-2m1 2v4h3V5z" />
-        </svg></div>
-      <h2>Hook‑Driven Plugins</h2>
-      <p>Extend functionality without modifying core files – WordPress‑like actions and filters.</p>
-    </div>
-    <div class="lab-card">
-      <div class="lab-card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path
-            d="M4 10a1 1 0 0 1-1-1 1 1 0 0 1 1-1h8a2 2 0 0 0 2-2 2 2 0 0 0-2-2c-.55 0-1.05.22-1.41.59a.973.973 0 0 1-1.42 0c-.39-.39-.39-1.03 0-1.42C9.9 2.45 10.9 2 12 2a4 4 0 0 1 4 4 4 4 0 0 1-4 4zm15 2a1 1 0 0 0 1-1 1 1 0 0 0-1-1c-.28 0-.53.11-.71.29a.996.996 0 0 1-1.41 0c-.38-.39-.38-1.02 0-1.41C17.42 8.34 18.17 8 19 8a3 3 0 0 1 3 3 3 3 0 0 1-3 3H5a1 1 0 0 1-1-1 1 1 0 0 1 1-1zm-1 6H4a1 1 0 0 1-1-1 1 1 0 0 1 1-1h14a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-.83 0-1.58-.34-2.12-.88-.38-.39-.38-1.02 0-1.41a.996.996 0 0 1 1.41 0c.18.18.43.29.71.29a1 1 0 0 0 1-1 1 1 0 0 0-1-1" />
-        </svg></div>
-      <h2>Fast & Lightweight</h2>
-      <p>Pure PHP, no framework overhead. Suitable for shared hosting, VPS, or dedicated servers.</p>
-    </div>
-    <div class="lab-card">
-      <div class="lab-card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path
-            d="M12.67 13.67c-.47.46-1.04.83-1.67 1.06V23H8v-2H5v-3h3v-3.28c-1.74-.62-3-2.26-3-4.22C5 8 7 6 9.5 6h.1c-.47.95-.68 2-.57 3.08-.59.2-1.03.76-1.03 1.42 0 .83.67 1.5 1.5 1.5.23 0 .45-.06.65-.15.64.84 1.52 1.47 2.52 1.82m8.06 5.77-2.76 1.16-.78-1.84-2.76 1.17-1.17-2.77L16.03 16l-1.27-3c-1.85.08-3.65-.95-4.41-2.75-.96-2.29.12-4.93 2.41-5.9.24-.1.5-.17.74-.23C12.84 2.87 11.5 2 10 2 7.79 2 6 3.79 6 6v.24c-.3.26-.6.58-.85.91C5.06 6.78 5 6.4 5 6c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.42-.6 2.67-1.55 3.57.42.43 1.05.56 1.63.31.77-.32 1.12-1.2.8-1.96a1 1 0 0 0-.14-.26C15.9 7.13 16 6.58 16 6c0-.63-.1-1.24-.28-1.81 1.28.36 2.38 1.25 2.93 2.57.76 1.8.24 3.81-1.15 5.05zM13 8.6c.37-.41.65-.89.82-1.42-.54.27-.85.82-.82 1.42" />
-        </svg></div>
-      <h2>Full Ownership</h2>
-      <p>Keep your data and sources secure on your own server – no vendor lock‑in.</p>
-    </div>
-    <div class="lab-card">
-      <div class="lab-card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path
-            d="M7.75 11c-.69 0-1.25.56-1.25 1.25v1.5a1.25 1.25 0 102.5 0v-1.5C9 11.56 8.44 11 7.75 11zm1.27 4.5a.469.469 0 01.48-.5h5a.47.47 0 01.48.5c-.116 1.316-.759 2.5-2.98 2.5s-2.864-1.184-2.98-2.5zm7.23-4.5c-.69 0-1.25.56-1.25 1.25v1.5a1.25 1.25 0 102.5 0v-1.5c0-.69-.56-1.25-1.25-1.25z" />
-          <path fill-rule="evenodd"
-            d="M21.255 3.82a1.725 1.725 0 00-2.141-1.195c-.557.16-1.406.44-2.264.866-.78.386-1.647.93-2.293 1.677A18.442 18.442 0 0012 5c-.93 0-1.784.059-2.569.17-.645-.74-1.505-1.28-2.28-1.664a13.876 13.876 0 00-2.265-.866 1.725 1.725 0 00-2.141 1.196 23.645 23.645 0 00-.69 3.292c-.125.97-.191 2.07-.066 3.112C1.254 11.882 1 13.734 1 15.527 1 19.915 3.13 23 12 23c8.87 0 11-3.053 11-7.473 0-1.794-.255-3.647-.99-5.29.127-1.046.06-2.15-.066-3.125a23.652 23.652 0 00-.689-3.292zM20.5 14c.5 3.5-1.5 6.5-8.5 6.5s-9-3-8.5-6.5c.583-4 3-6 8.5-6s7.928 2 8.5 6z" />
-        </svg></div>
-      <h2>Open Source</h2>
-      <p>Licensed under GPL v3, free for academic labs. Contributions welcome!</p>
+  </div>
+
+  <!-- 分类二：Setup -->
+  <div class="lab-doclist__group">
+    <h3 class="lab-doclist__group-title">Setup</h3>
+    <div class="lab-doclist__list">
+      <!-- 条目 3 -->
+      <article class="lab-doclist__item">
+        <div class="lab-doclist__item-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+        </div>
+        <div class="lab-doclist__item-content">
+          <div class="lab-doclist__item-top">
+            <span class="lab-doclist__item-tag">Configuration</span>
+            <span class="lab-doclist__item-time">4 min</span>
+          </div>
+          <h4 class="lab-doclist__item-title">
+            <a href="{{ 'setup/site-settings/' | url }}">Site Settings</a>
+          </h4>
+          <p class="lab-doclist__item-desc">Configure your site's title, description, and URL for production.</p>
+        </div>
+        <div class="lab-doclist__item-actions">
+          <a href="{{ 'setup/site-settings/' | url }}" class="lab-doclist__item-read">
+            Read
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="https://github.com/GuiHui-huimy/HuiMyDocHome/blob/main/docs/setup/site-settings.md"
+            class="lab-doclist__item-github" target="_blank" rel="noopener" title="View source">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
