@@ -1,0 +1,120 @@
+/* ========== 亮色模式导航栏 ========== */
+[data-md-color-scheme="default"] .md-header {
+    background-color: #333333;
+    /* 自定义蓝色，可换成任意颜色 */
+    color: #ffffff;
+    /* 导航栏文字颜色 */
+}
+
+/* 亮色模式下顶部标签栏（tabs）的背景 */
+[data-md-color-scheme="default"] .md-tabs {
+    background-color: #333333;
+    /* 比导航栏稍深的蓝色 */
+}
+
+/* ========== 暗色模式导航栏 ========== */
+[data-md-color-scheme="slate"] .md-header {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+    background-color: #333333;
+}
+
+/* 可选的细节调整：导航栏中的链接、图标颜色 */
+.md-header__button,
+.md-header__title,
+.md-tabs__link {
+    color: inherit !important;
+    /* 继承父容器颜色，确保文字白色可见 */
+}
+
+/* 如果搜索栏背景需要调整 */
+.md-search__input {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 亮色模式下的公告栏背景 */
+[data-md-color-scheme="default"] .md-banner {
+    background-color: #5a5757;
+    /* 换成你喜欢的颜色 */
+    color: #ffffff;
+    /* 文字颜色可同步调整 */
+}
+
+/* 暗色模式下的公告栏背景 */
+[data-md-color-scheme="slate"] .md-banner {
+    background-color: #5a5757;
+    color: #ffffff;
+}
+
+.md-header__topic .md-ellipsis {
+    color: #fe00005e !important;
+}
+
+
+@media screen and (max-width: 76.2344em) {
+
+    .md-nav--primary,
+    .md-nav--primary .md-nav {
+        background-color: hsl(0deg 100% 50%);
+
+    }
+}
+
+@media screen and (max-width: 76.2344em) {
+    .md-nav--primary .md-nav__title .md-logo {
+        color: #ff00009c;
+    }
+}
+
+@media screen and (max-width: 76.2344em) {
+    html [data-md-color-primary=black] .md-nav--primary .md-nav__title[for=__drawer] {
+        background-color: #333333;
+    }
+}
+
+@media screen and (max-width: 76.2344em) {
+    .md-nav--primary .md-nav__title~.md-nav__list {
+        background-color: #575757;
+    }
+}
+
+@media screen and (max-width: 76.2344em) {
+    .md-nav__toggle:checked~.md-nav {
+        background-color: #333333;
+
+    }
+}
+
+@media screen and (max-width: 59.9844em) {
+    .md-nav__source {
+        background-color: hsla(var(--md-hue), 15%, 11%, .87);
+
+    }
+}
+
+@media screen and (max-width: 76.2344em) {
+    .md-nav--primary .md-nav__title[for=__drawer] {
+        background-color: #333333;
+
+    }
+}
+
+.md-nav--primary .md-nav__item--active>.md-nav__link {
+    color: #fe00005e;
+}
+
+.md-nav--primary .md-nav__item--active>.md-nav__link:focus,
+.md-nav--primary .md-nav__item--active>.md-nav__link:hover {
+    color: #ff00009c;
+}
+
+.md-nav__link[for]:focus,
+.md-nav__link[for]:hover,
+.md-nav__link[href]:focus,
+.md-nav__link[href]:hover {
+    color: #fe00005e;
+    cursor: pointer;
+}

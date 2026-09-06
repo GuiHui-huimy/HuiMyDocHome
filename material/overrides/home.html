@@ -1,0 +1,192 @@
+{% extends "main.html" %}
+{% block announce %}{% endblock %}
+{% block tabs %}
+{{ super() }}
+<script>document.body.classList.add('is-home');</script>
+{% endblock %}
+{% block hero %}
+<!-- Hero -->
+<section class="lab-hero">
+  <div class="lab-hero__inner">
+    <h1>HUIMY Document Template</h1>
+    <p> HUI-MY Material Theme Mkdoc Template & Get Started Quickly</p>
+    <div class="lab-hero__actions">
+      <a href="{{ 'getting-started/installation/' | url }}" class="md-button md-button--primary">Get started</a>
+      <a href="https://github.com/GuiHui-huimy/" class="md-button md-button--secondary">View on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- 特性卡片 -->
+<section class="lab-features">
+  <h2 class="lab-features__title">Why LabPress?</h2>
+  <div class="lab-features__grid">
+    <div class="lab-card">
+      <div class="lab-card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M20.56 18H3.44C2.65 18 2 17.37 2 16.59V7.41C2 6.63 2.65 6 3.44 6h17.12c.79 0 1.44.63 1.44 1.41v9.18c0 .78-.65 1.41-1.44 1.41M6.81 15.19v-3.66l1.92 2.35 1.92-2.35v3.66h1.93V8.81h-1.93l-1.92 2.35-1.92-2.35H4.89v6.38zM19.69 12h-1.92V8.81h-1.92V12h-1.93l2.89 3.28z" />
+        </svg></div>
+      <h2>Built‑in Academic Modules</h2>
+      <p>Publications, projects, news, and tools – ready to use out of the box.</p>
+    </div>
+    <div class="lab-card">
+      <div class="lab-card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M3 6h18V4H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4v-2H3zm10 6H9v1.78c-.61.55-1 1.33-1 2.22s.39 1.67 1 2.22V20h4v-1.78c.61-.55 1-1.34 1-2.22s-.39-1.67-1-2.22zm-2 5.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5M22 8h-6c-.5 0-1 .5-1 1v10c0 .5.5 1 1 1h6c.5 0 1-.5 1-1V9c0-.5-.5-1-1-1m-1 10h-4v-8h4z" />
+        </svg></div>
+      <h2>Works on all devices</h2>
+      <p>Your lab site looks great on desktop, tablet, and mobile.</p>
+    </div>
+    <div class="lab-card">
+      <div class="lab-card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M17 8h3v12h1v1h-4v-1h1v-3h-4l-1.5 3H14v1h-4v-1h1zm1 1-3.5 7H18zM5 3h5c1.11 0 2 .89 2 2v11H9v-5H6v5H3V5c0-1.11.89-2 2-2m1 2v4h3V5z" />
+        </svg></div>
+      <h2>Hook‑Driven Plugins</h2>
+      <p>Extend functionality without modifying core files – WordPress‑like actions and filters.</p>
+    </div>
+    <div class="lab-card">
+      <div class="lab-card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M4 10a1 1 0 0 1-1-1 1 1 0 0 1 1-1h8a2 2 0 0 0 2-2 2 2 0 0 0-2-2c-.55 0-1.05.22-1.41.59a.973.973 0 0 1-1.42 0c-.39-.39-.39-1.03 0-1.42C9.9 2.45 10.9 2 12 2a4 4 0 0 1 4 4 4 4 0 0 1-4 4zm15 2a1 1 0 0 0 1-1 1 1 0 0 0-1-1c-.28 0-.53.11-.71.29a.996.996 0 0 1-1.41 0c-.38-.39-.38-1.02 0-1.41C17.42 8.34 18.17 8 19 8a3 3 0 0 1 3 3 3 3 0 0 1-3 3H5a1 1 0 0 1-1-1 1 1 0 0 1 1-1zm-1 6H4a1 1 0 0 1-1-1 1 1 0 0 1 1-1h14a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-.83 0-1.58-.34-2.12-.88-.38-.39-.38-1.02 0-1.41a.996.996 0 0 1 1.41 0c.18.18.43.29.71.29a1 1 0 0 0 1-1 1 1 0 0 0-1-1" />
+        </svg></div>
+      <h2>Fast & Lightweight</h2>
+      <p>Pure PHP, no framework overhead. Suitable for shared hosting, VPS, or dedicated servers.</p>
+    </div>
+    <div class="lab-card">
+      <div class="lab-card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M12.67 13.67c-.47.46-1.04.83-1.67 1.06V23H8v-2H5v-3h3v-3.28c-1.74-.62-3-2.26-3-4.22C5 8 7 6 9.5 6h.1c-.47.95-.68 2-.57 3.08-.59.2-1.03.76-1.03 1.42 0 .83.67 1.5 1.5 1.5.23 0 .45-.06.65-.15.64.84 1.52 1.47 2.52 1.82m8.06 5.77-2.76 1.16-.78-1.84-2.76 1.17-1.17-2.77L16.03 16l-1.27-3c-1.85.08-3.65-.95-4.41-2.75-.96-2.29.12-4.93 2.41-5.9.24-.1.5-.17.74-.23C12.84 2.87 11.5 2 10 2 7.79 2 6 3.79 6 6v.24c-.3.26-.6.58-.85.91C5.06 6.78 5 6.4 5 6c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.42-.6 2.67-1.55 3.57.42.43 1.05.56 1.63.31.77-.32 1.12-1.2.8-1.96a1 1 0 0 0-.14-.26C15.9 7.13 16 6.58 16 6c0-.63-.1-1.24-.28-1.81 1.28.36 2.38 1.25 2.93 2.57.76 1.8.24 3.81-1.15 5.05zM13 8.6c.37-.41.65-.89.82-1.42-.54.27-.85.82-.82 1.42" />
+        </svg></div>
+      <h2>Full Ownership</h2>
+      <p>Keep your data and sources secure on your own server – no vendor lock‑in.</p>
+    </div>
+    <div class="lab-card">
+      <div class="lab-card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M7.75 11c-.69 0-1.25.56-1.25 1.25v1.5a1.25 1.25 0 102.5 0v-1.5C9 11.56 8.44 11 7.75 11zm1.27 4.5a.469.469 0 01.48-.5h5a.47.47 0 01.48.5c-.116 1.316-.759 2.5-2.98 2.5s-2.864-1.184-2.98-2.5zm7.23-4.5c-.69 0-1.25.56-1.25 1.25v1.5a1.25 1.25 0 102.5 0v-1.5c0-.69-.56-1.25-1.25-1.25z" />
+          <path fill-rule="evenodd"
+            d="M21.255 3.82a1.725 1.725 0 00-2.141-1.195c-.557.16-1.406.44-2.264.866-.78.386-1.647.93-2.293 1.677A18.442 18.442 0 0012 5c-.93 0-1.784.059-2.569.17-.645-.74-1.505-1.28-2.28-1.664a13.876 13.876 0 00-2.265-.866 1.725 1.725 0 00-2.141 1.196 23.645 23.645 0 00-.69 3.292c-.125.97-.191 2.07-.066 3.112C1.254 11.882 1 13.734 1 15.527 1 19.915 3.13 23 12 23c8.87 0 11-3.053 11-7.473 0-1.794-.255-3.647-.99-5.29.127-1.046.06-2.15-.066-3.125a23.652 23.652 0 00-.689-3.292zM20.5 14c.5 3.5-1.5 6.5-8.5 6.5s-9-3-8.5-6.5c.583-4 3-6 8.5-6s7.928 2 8.5 6z" />
+        </svg></div>
+      <h2>Open Source</h2>
+      <p>Licensed under GPL v3, free for academic labs. Contributions welcome!</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="lab-demo">
+  <div class="lab-demo__inner">
+    <div class="lab-demo__text">
+      <h2>See LabPress in Action</h2>
+      <p>Browse our live demo to explore all features, including publication management, project showcases, and
+        multilingual support.</p>
+      <a href="https://lab.huimy.top/" class="md-button md-button--primary" target="_blank" rel="noopener">View Demo</a>
+    </div>
+    <div class="lab-demo__image">
+      <img src="assets/images/screenshot-home.png" alt="LabPress Demo" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="lab-links">
+  <h2 class="lab-links__title">Join the LabPress Community & Learn More About HUI-MY </h2>
+  <div class="lab-links__list">
+    <a href="https://lab.huimy.top/" class="lab-links__item" target="_blank" rel="noopener">
+      <span class="lab-links__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z" />
+        </svg>
+      </span>
+      <span class="lab-links__label">Lab</span>
+      <span class="lab-links__sublabel">More Projects &amp; Tools</span>
+    </a>
+
+    <a href="https://forum.huimy.top/" class="lab-links__item" target="_blank" rel="noopener">
+      <span class="lab-links__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z" />
+        </svg>
+      </span>
+      <span class="lab-links__label">Forum</span>
+      <span class="lab-links__sublabel">Ask questions &amp; share</span>
+    </a>
+    <a href="https://blog.huimy.top/" class="lab-links__item" target="_blank" rel="noopener">
+      <span class="lab-links__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z" />
+        </svg>
+      </span>
+      <span class="lab-links__label">Blog</span>
+      <span class="lab-links__sublabel">HUI-MY News &amp; tutorials</span>
+    </a>
+    <a href="https://labpress.huimy.top/" class="lab-links__item" target="_blank" rel="noopener">
+      <span class="lab-links__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+        </svg>
+      </span>
+      <span class="lab-links__label">Main Site</span>
+      <span class="lab-links__sublabel">HomePage &amp; Navigation</span>
+    </a>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="lab-cta">
+  <h2>Ready to launch your lab website?</h2>
+  <p>LabPress is trusted by research labs worldwide.</p>
+  <a href="{{ 'getting-started/installation/' | url }}" class="md-button md-button--primary">Install LabPress</a>
+</section>
+
+<!-- 滚动隐藏 Header/Tabs -->
+<script>
+  (function () {
+    var header = document.querySelector('.md-header');
+    var hero = document.querySelector('.lab-hero');
+    if (!header || !hero) return;
+
+    // ！在这里设置您想要的最终背景色（十六进制）
+    var finalColor = '#333333';   // 默认 indigo，您可以改成任何值
+
+    // 将十六进制颜色转换为 RGB 对象
+    function hexToRgb(hex) {
+      hex = hex.replace('#', '');
+      return {
+        r: parseInt(hex.substring(0, 2), 16),
+        g: parseInt(hex.substring(2, 4), 16),
+        b: parseInt(hex.substring(4, 6), 16)
+      };
+    }
+
+    var primary = hexToRgb(finalColor);
+
+    function updateHeaderBackground() {
+      var scrollTop = window.pageYOffset;
+      var heroTop = hero.offsetTop;
+      var quarterHeight = hero.offsetHeight * 0.25;
+      var start = heroTop;
+      var end = heroTop + quarterHeight;
+
+      var alpha = 0;
+      if (scrollTop >= end) {
+        alpha = 1;
+      } else if (scrollTop > start) {
+        alpha = (scrollTop - start) / (end - start);
+      }
+      alpha = Math.max(0, Math.min(1, alpha));
+      header.style.backgroundColor = 'rgba(' + primary.r + ',' + primary.g + ',' + primary.b + ',' + alpha + ')';
+    }
+
+    window.addEventListener('scroll', updateHeaderBackground, { passive: true });
+    window.addEventListener('resize', updateHeaderBackground);
+    updateHeaderBackground();
+  })();
+</script>
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}
+{{ super() }}
+{% endblock %}

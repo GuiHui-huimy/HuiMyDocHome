@@ -1,0 +1,539 @@
+/* ===== 全宽视差 Hero ===== */
+.lab-hero {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-color: #1a1a2e;
+    background-image:
+        url("../images/layers/1-landscape.avif");
+    background-position: bottom, bottom, bottom, bottom;
+    background-size: cover, cover, cover, cover;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed, fixed;
+    overflow: hidden;
+    margin-top: 0 !important;
+    padding-top: 132px;
+    /* 为固定的 Banner + Header + Tabs 留空 */
+}
+
+.lab-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgb(57 57 57 / 17%) 0%, rgb(0 0 0 / 66%) 100%);
+    z-index: 1;
+}
+
+.lab-hero__inner {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+}
+
+.lab-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.lab-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+.lab-hero__actions .md-button {
+    display: inline-block;
+    background: #fff;
+    color: #1a1a2e;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: 700;
+    margin: 0.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.lab-hero__actions .md-button--secondary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+.lab-hero__actions .md-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== 特性卡片 ===== */
+.lab-features {
+    padding: 5rem 2rem;
+    background: var(--md-default-bg-color);
+}
+
+.lab-features__title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: var(--md-typeset-color);
+}
+
+.lab-features__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lab-card {
+    background: var(--md-code-bg-color);
+    border-radius: 4px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: labFadeInUp 0.6s ease both;
+}
+
+.lab-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.lab-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.lab-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.lab-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.lab-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.lab-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.lab-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.lab-card__icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 1rem;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 12px;
+    padding: 10px;
+    color: #ff00009c;
+}
+
+.lab-card__icon svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+.lab-card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--md-typeset-color);
+}
+
+.lab-card p {
+    color: var(--md-typeset-color--lighter);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ===== CTA ===== */
+.lab-cta {
+    background: var(--md-default-fg-color--lightest);
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.lab-cta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.lab-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: var(--md-typeset-color--light);
+}
+
+.lab-cta .md-button {
+    background: #f07979;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: transform 0.2s;
+}
+
+.lab-cta .md-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* 首页内容区域顶部重置（仅首页需要） */
+body.is-home .md-content__inner {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* ===== 动画 ===== */
+@keyframes labFadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== 仅首页生效的固定导航、隐藏滚动条等 ===== */
+body.is-home .md-banner {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 300;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+}
+
+body.is-home .md-header {
+    position: fixed !important;
+
+    left: 0;
+    right: 0;
+    height: 48px;
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+body.is-home .md-tabs {
+    position: fixed !important;
+    top: 48px;
+    left: 0;
+    right: 0;
+    z-index: 250;
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+/* 隐藏滚动条 */
+body.is-home {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body.is-home::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/*Default is transparent*/
+body.is-home .md-header,
+body.is-home .md-tabs {
+    background-color: transparent;
+    /* 这个会被 JS 的内联样式覆盖，无需 !important */
+
+}
+
+/* 滚动后添加 .scrolled 时显示背景色 */
+body.is-home .md-header.scrolled {
+    background-color: var(--md-primary-fg-color) !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) !important;
+}
+
+body.is-home .md-main {
+    height: 0px;
+
+}
+
+body.is-home md-tabs {
+    background-color: transparent !important;
+
+}
+
+/* 首页隐藏滚动条 */
+body.is-home {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body.is-home::-webkit-scrollbar {
+    display: none;
+}
+
+/* 首页隐藏侧边栏 */
+@media screen and (min-width:60em) {
+    body.is-home .md-sidebar--secondary {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width:76.25em) {
+    body.is-home .md-sidebar--primary {
+        display: none !important;
+    }
+}
+
+/* 移动端微调 */
+@media (max-width: 768px) {
+    .lab-hero {
+        min-height: 80vh;
+        background-attachment: scroll;
+        padding-top: 120px;
+    }
+
+    .lab-hero h1 {
+        font-size: 2rem;
+    }
+
+    .lab-features__title {
+        font-size: 1.8rem;
+    }
+
+    body.is-home .md-banner {
+        height: 36px;
+    }
+
+
+    body.is-home .md-tabs {
+        top: 84px;
+    }
+}
+
+/* 窄屏（≤1220px）仍保持固定，透明渐变 */
+@media screen and (max-width: 76.234375em) {
+
+    /* 确保 Banner 也固定（如果有的话），避免挤占空间 */
+    body.is-home .md-banner {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 300;
+        height: 40px;
+        /* 与桌面端一致 */
+    }
+
+    /* Header 保持在 Banner 下方固定，透明渐变 */
+    body.is-home .md-header {
+        background-color: transparent;
+        /* JS 控制 */
+    }
+
+
+    /* Hero 偏移避开 Banner + Header + Tabs */
+    body.is-home .lab-hero {
+        padding-top: 132px !important;
+        /* 40+48+44 */
+    }
+
+    /* 确保暗色主题下透明效果正常 */
+    [data-md-color-scheme="slate"] body.is-home .md-header,
+    [data-md-color-scheme="slate"] body.is-home .md-tabs {
+        background-color: transparent !important;
+    }
+
+    /* 抽屉菜单层级必须高于 Header */
+    body.is-home .md-nav--primary {
+        z-index: 400 !important;
+    }
+
+    /* 移动端 Banner 高度可能不同，可微调 */
+    @media (max-width: 768px) {
+        body.is-home .md-banner {
+            height: 36px;
+        }
+
+
+        body.is-home .md-tabs {
+            top: 84px !important;
+        }
+
+        body.is-home .lab-hero {
+            padding-top: 120px !important;
+        }
+    }
+}
+
+
+/* ===== Demo 展示（左文右图） ===== */
+body.is-home .lab-demo {
+    padding: 5rem 2rem;
+    background: var(--md-default-fg-color--lightest);
+}
+
+body.is-home .lab-demo__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+body.is-home .lab-demo__text {
+    flex: 1 1 300px;
+}
+
+body.is-home .lab-demo__text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--md-typeset-color);
+}
+
+body.is-home .lab-demo__text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--md-typeset-color--light);
+    margin-bottom: 2rem;
+}
+
+body.is-home .lab-demo__text .md-button {
+    background: #f07979;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: transform 0.2s;
+}
+
+body.is-home .lab-demo__text .md-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+body.is-home .lab-demo__image {
+    flex: 1 1 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+body.is-home .lab-demo__image img {
+    width: 100%;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    body.is-home .lab-demo__inner {
+        flex-direction: column;
+    }
+
+    body.is-home .lab-demo__text,
+    body.is-home .lab-demo__image {
+        flex: 1 1 auto;
+    }
+}
+
+
+
+/* ===== 外部链接（简洁图标风格） ===== */
+body.is-home .lab-links {
+    padding: 5rem 2rem;
+    background: var(--md-default-bg-color);
+    text-align: center;
+}
+
+body.is-home .lab-links__title {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: var(--md-typeset-color);
+}
+
+body.is-home .lab-links__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+body.is-home .lab-links__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--md-typeset-color);
+    transition: color 0.2s, transform 0.2s;
+}
+
+body.is-home .lab-links__item:hover {
+    color: #ff000050;
+    transform: translateY(-3px);
+}
+
+body.is-home .lab-links__icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 50%;
+    margin-bottom: 0.8rem;
+    color: #ff00009c;
+    transition: background 0.2s;
+}
+
+body.is-home .lab-links__item:hover .lab-links__icon {
+    background: rgba(102, 126, 234, 0.2);
+}
+
+body.is-home .lab-links__icon svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+body.is-home .lab-links__label {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+body.is-home .lab-links__sublabel {
+    font-size: 0.85rem;
+    color: var(--md-typeset-color--light);
+    margin-top: 0.2rem;
+}
