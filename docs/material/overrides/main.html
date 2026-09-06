@@ -1,0 +1,24 @@
+{#-
+This file was automatically generated - do not edit
+-#}
+{% extends "base.html" %}
+{% block extrahead %}
+<link rel="stylesheet" href="{{ 'assets/stylesheets/custom.f120bdc6.min.css' | url }}">
+{% endblock %}
+{% block announce %}
+{% if not page.is_homepage %}
+
+
+🎉 Now LabPress is open source and free to use. If you like it, please Star it on
+<a href="https://github.com/GuiHui-huimy/LabPress">
+  <span class="twemoji github">
+    {% include ".icons/fontawesome/brands/github.svg" %}
+  </span>
+  <strong>GitHub</strong>
+
+  {% endif %}
+  {% endblock %}
+  {% block scripts %}
+  {{ super() }}
+  <script src="{{ 'assets/javascripts/custom.f9feb4cf.min.js' | url }}"></script>
+  {% endblock %}

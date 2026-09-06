@@ -1,0 +1,54 @@
+# Copyright (c) 2024-2025 LabPress contributors
+# SPDX-License-Identifier: GPL-3.0-only
+
+# -----------------------------------------------------------------------------
+# PHP & Composer (keep even if you currently don't use Composer)
+# -----------------------------------------------------------------------------
+vendor/
+*.log
+*.env
+
+# -----------------------------------------------------------------------------
+# Database dumps (keep the example database, ignore all others)
+# -----------------------------------------------------------------------------
+*.sql
+!labpressexample.sql
+
+
+
+# -----------------------------------------------------------------------------
+# Plugin debug logs
+# -----------------------------------------------------------------------------
+plugins/*/debug.log
+
+# -----------------------------------------------------------------------------
+# Archives (e.g. plugin ZIPs created during development)
+# -----------------------------------------------------------------------------
+*.zip
+
+# -----------------------------------------------------------------------------
+# General
+# -----------------------------------------------------------------------------
+
+# Never ignore .gitkeep files
+!**/.gitkeep
+
+# macOS internals
+.DS_Store
+
+# Temporary files
+TODO
+tmp
+*.swp
+*.swo
+*~
+# MkDocs
+site/
+# IDEs & Editors
+
+__pycache__/
+*.pyc
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
