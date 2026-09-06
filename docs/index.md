@@ -1,6 +1,6 @@
 ---
 template: home.html
-title: LabPress – Open-Source Academic CMS
+title: HUIMY Docs Hub – Documents Hub
 social:
   cards_layout_options:
     title: Documentation that simply works
