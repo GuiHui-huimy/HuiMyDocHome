@@ -142,5 +142,6 @@ markdown_extensions:
 # Page tree 
 nav:
   - Home: index.md
+  - Doc List: docslist.md
   - About: about.md
   - Changelog: changelog.md
