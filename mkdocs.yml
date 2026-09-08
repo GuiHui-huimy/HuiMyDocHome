@@ -142,16 +142,5 @@ markdown_extensions:
 # Page tree 
 nav:
   - Home: index.md
-  - Getting Started:
-    - Overview: getting-started/overview.md
-    - Installation: getting-started/installation.md
-    - Quick Start: getting-started/quick-start.md
-    - Configuration: getting-started/configuration.md
-  - Setup:
-    - Site Settings: setup/site-settings.md
-    - Navigation Menu: setup/navigation.md
-    - Plugin Management: setup/plugins.md
-    - Theme: setup/theme.md
-  - Contributing: contributing.md
-  - Security: security.md
+  - About: about.md
   - Changelog: changelog.md
